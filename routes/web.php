@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/add', 'calculatorController@addValues');
+
+Route::get('/sub', function(){
+    return 4-2;
 });
